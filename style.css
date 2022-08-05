@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2C3639;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+/*BANNER , HEADING and SlOGAN*/
+
+.banner {
+    margin-top: 10px;
+    background-image: url(img/towfiqu-barbhuiya-FnA5pAzqhMM-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+
+.heading {
+    margin: 10px auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    width: 95%;
+    border-bottom-left-radius: 22px;
+}
+
+header.title {
+    margin-top: 20px;
+    margin-left: 40px;
+    color: #fff;
+}
+
+header.title h1 {
+    border-bottom: 5px #A27B5C solid;
+}
+
+.navigation {
+    margin-top: 35px;
+    margin-right: 20px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0px 15px;
+}
+
+.nav-menu li a { 
+    color: #fff;
+    font-weight: bold;
+    padding: 0px 10px;
+    border-left: 3px #A27B5C solid;
+}
+
+.nav-menu li a:hover {
+    padding: 10px 10px;
+    transition: padding 0.5s ease-in;
+}
+
+
+.nav-menu-mobile {
+    position: absolute;
+    top: 29px;
+    right: 190px;
+    display: none;
+}
+
+.btn  {
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 25px;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #A27B5C;
+    transition: 0.45s ease-in;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 9% auto;
+    padding: 100px 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 55%;
+    color: #A27B5C;
+    border-radius: 10px;
+}
+
+.white-text {
+    color: #fff;
+}
+
+/*CONTENT*/
+
+.content {
+    margin-top: 2%;
+}
+
+/*MiniCards*/
+
+.title-minicards {
+    text-align: center;
+    margin: 20px auto;
+    color: #fff;
+    width: 75%;
+}
+
+.title-minicards h2 {
+    border-bottom: #A27B5C solid 3px;
+    font-size: 45px;
+}
+
+.minicards {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.75);
+    margin: 0px 5px;
+    padding: 40px 20px;
+    border-radius: 22px;
+}
+
+.card h3 { 
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #fff;
+    font-weight: bold;
+}
+
+.img-icon {
+    width: 128px;
+    height: 128px;
+}
+
+.payment-title {
+    text-align: center;
+    margin: 20px auto;
+    color: #fff;
+    width: 55%;
+}
+
+.payment-title h2 {
+    border-bottom: #A27B5C solid 3px;
+    font-size: 45px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.includes {
+    margin-top: 20%;
+}
+
+.includes li {
+    margin: 15px 0px;
+}
+
+.includes li h4 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.marks {
+    margin-top: 33px;
+}
+
+.marks li {
+    margin: 15px;
+}
+
+.marks li i { 
+    font-size: 25px;
+}
+
+.fa-check { 
+    color: green;
+}
+
+.fa-xmark { 
+    color: red;
+}
+
+.price {
+    margin-top: 20px;
+    color: green;
+    font-size: 30px;
+}
+
+.payment {
+    margin-top: 10%;
+}
+
+.btn-payment {
+    padding: 20px 100px;
+    border-radius: 12px;
+    border: none;
+    color: #fff;
+    background-color: green;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+
+.btn-payment:hover {
+    background-color: #fff;
+    color: green;
+}
+
+/*Mobile Styles*/
+
+@media (max-width: 775px) { 
+    .container {
+        width: 60%;
+        margin: auto;
+    }
+
+    .nav-menu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 146px;
+        left: 80px;
+        background-color: rgba(0, 0, 0, 0.75);
+        padding: 20px 10px;
+        border-bottom-right-radius: 22px;
+        border-top-right-radius: 22px;
+        transform: translateX(-400px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    ul.nav-menu.show {
+        transform: translateX(0px);
+    }
+
+    .nav-menu li {
+        margin: 20px 0px;
+    }
+
+    .nav-menu-mobile {
+        display: block;
+    }
+
+    .minicards {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .card {
+        margin: 20px 0px;
+    }
+}
